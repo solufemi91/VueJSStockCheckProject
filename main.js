@@ -4,7 +4,9 @@ var app = new Vue({
   el: '#app',
   data : {
     product : "Socks",
-    image : "socks.jpg",
+    brand : "Vue Mastery",
+    //image : "socks.jpg",
+    selectedVariant: 0,
     altText : "image not available",
     inStock : true,
     inventory: 100,
@@ -33,6 +35,13 @@ var app = new Vue({
     updateProduct(imageLink){
       this.image = imageLink
     }
+  },
+
+  computed: {
+    title(){
+      return this.brand + '' + this.product
+    }
+
   }
 
 
