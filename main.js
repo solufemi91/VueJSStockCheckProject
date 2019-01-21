@@ -4,15 +4,9 @@ var app = new Vue({
   el: '#app',
   data : {
     product : "Socks",
-<<<<<<< HEAD
-    brand : "Vue Mastery",
-=======
     brand: 'Vue Mastery',
->>>>>>> 8f180b8118a2698ece2573fe67a4d7b4988c2269
-    //image : "socks.jpg",
     selectedVariant: 0,
     altText : "image not available",
-    //inStock : true,
     inventory: 100,
     onSale : true,
     details: ["80% cotton", "20% polyester", "gender-neautral"],
@@ -55,39 +49,30 @@ var app = new Vue({
     inStock(){
       return this.variants[this.selectedVariant].variantQuantity
     }
-  },
-
-  computed: {
-    title(){
-      return this.brand + '' + this.product
-    }
-
   }
-
-
 
 
 })
 
-Vue.component('product', {
-  template: `
-  <div class="product">
-    ...
-  </div>
-
-  `,
-  data() {
-    return {
-
-    }
-  },
-
-  methods: {
-
-  },
-
-  computed: {
-
-  }
-
-})
+// Vue.component('product', {
+//   template: `
+//   <div class="product">
+//     ...
+//   </div>
+//
+//   `,
+//   data() {
+//     return {
+//
+//     }
+//   },
+//
+//   methods: {
+//
+//   },
+//
+//   computed: {
+//
+//   }
+//
+// })
